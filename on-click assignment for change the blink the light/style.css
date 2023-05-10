@@ -1,0 +1,78 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+}
+.c-btn {
+  padding: 0 2rem;
+  border: 0.1rem solid #000;
+  border-radius: 3.12rem;
+  box-shadow: 0 0.4rem 0 0 #000;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.c-btn:hover {
+  transform: translateY(0.3rem);
+  box-shadow: 0 0.2rem 0 0 #000;
+}
+.img2 {
+  position: relative;
+}
+svg.bottom-light {
+  position: absolute;
+  height: 13%;
+  width: auto;
+  left: 50%;
+  bottom: 6%;
+  border-radius: 50px 50px;
+  transform: translate(-50%, -17%);
+  display: none;
+  filter: drop-shadow(3px 2px 2px rgba(255, 255, 255, 1));
+}
+@keyframes blink {
+  100%,
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+}
+
+svg {
+  animation: blink 0.2s;
+}
+svg.right-top {
+  position: absolute;
+  height: 13%;
+  width: auto;
+  left: 69%;
+  top: 6%;
+  display: none;
+  transform: rotate(40deg);
+  filter: drop-shadow(3px 2px 2px rgba(255, 255, 255, 1));
+}
+svg.camera-light {
+  position: absolute;
+  height: 26%;
+  width: auto;
+  left: 3%;
+  top: 2%;
+  display: none;
+  filter: drop-shadow(5px 2px 2px rgba(255, 255, 255, 1));
+}
+svg.middle-light {
+  position: absolute;
+  height: 26%;
+  width: auto;
+  left: 10%;
+  top: 2%;
+  display: none;
+  filter: drop-shadow(5px 2px 2px rgba(255, 255, 255, 1));
+}
