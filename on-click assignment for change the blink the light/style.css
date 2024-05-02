@@ -76,3 +76,57 @@ svg.middle-light {
   display: none;
   filter: drop-shadow(5px 2px 2px rgba(255, 255, 255, 1));
 }
+nav {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu li:hover > a {
+  background-color: #555;
+}
+
+.dropdown {
+  background-color: #555;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}

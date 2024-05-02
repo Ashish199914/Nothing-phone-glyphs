@@ -11,6 +11,31 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="has-dropdown">
+          <a href="#">Products</a>
+          <ul class="dropdown">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+            <li><a href="#">Product 4</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+            <li><a href="#">Service 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -230,6 +255,15 @@
           $(".main-wrapper .camera-light").animate().delay(750).fadeIn();
           $(".main-wrapper .bottom-light").animate().delay(1000).fadeIn();
         });
+
+        $(".has-dropdown").hover(
+          function () {
+            $(this).find(".dropdown").stop(true, true).fadeIn(200);
+          },
+          function () {
+            $(this).find(".dropdown").stop(true, true).fadeOut(200);
+          }
+        );
       });
     </script>
   </body>
